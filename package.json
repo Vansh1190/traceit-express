@@ -1,0 +1,23 @@
+{
+  "name": "traceit-express",
+  "version": "0.1.2",
+  "description": "Lightweight request and error logging middleware for Express.",
+  "main": "index.js",
+  "type": "commonjs",
+  "keywords": [
+    "express",
+    "logging",
+    "middleware",
+    "logger",
+    "monitoring"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "mongoose": "^8.0.0"
+  },
+  "dependencies": {
+    "nanoid": "^4.0.0",
+    "traceit-express": "^0.1.1"
+  }
+}
