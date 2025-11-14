@@ -88,7 +88,36 @@ requestLogger({
 });
 ```
 
----
+### 🔌 Using MySQL as Storage
+
+1. Database Connection Module
+```
+const mysql = require("mysql2/promise");
+
+const createDB = async () => {
+  const db = await mysql.createConnection(process.env.MYSQL_URL);
+  console.log("MySQL connected");
+  return db;
+};
+
+module.exports = { createDB };
+```
+
+2. Integration in Application
+
+```
+createDB().then((db) => {
+  const storage = sqlStorage(db);
+  app.use(
+    requestLogger({
+      mongoose,
+      storage,
+      enableConsole: true,
+    })
+  );
+});
+```
+
 
 ## 🕵 Console Output Example
 
