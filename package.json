@@ -1,13 +1,13 @@
 {
   "name": "traceit-express",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Lightweight request and error logging middleware for Express.",
   "main": "index.js",
   "type": "commonjs",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/Vansh1190/traceit-express.git"
-   },
+  },
   "homepage": "https://github.com/Vansh1190/traceit-express#readme",
   "keywords": [
     "express",
