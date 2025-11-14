@@ -1,6 +1,6 @@
 {
   "name": "traceit-express",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Lightweight request and error logging middleware for Express.",
   "main": "index.js",
   "type": "commonjs",
